@@ -1,6 +1,19 @@
-# Getting Started
+# About Project Realtor
+Phase 1:
+Users:
+1. Property Seller
+2. Property Buyer
 
-Welcome to your new project.
+Operations:
+1. Seller will register in the system
+2. Once Registered seller will be able Post the New property information 
+3. Buyers will come see the list of all properties
+4. Buyer will request for a Property
+5. Seller will be able to see all request for one property
+6. Seller will finalize one of the request or cancel the requests.
+7. If finalized all other requests will be auto cancelled and Property will be removed from the list
+
+# Project Techical Details
 
 It contains these folders and files, following our recommended project layout:
 
