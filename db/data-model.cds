@@ -1,8 +1,8 @@
 namespace com.sap.realtor;
 using { managed, Country, cuid, Currency } from '@sap/cds/common';
 
-entity Property: managed{
-    key propertyId:Integer;
+entity Property: managed, cuid{
+    //key propertyId:Integer;
     propertyName: String;
     propertyType: String;
     propertyBhk: Integer;
@@ -11,10 +11,11 @@ entity Property: managed{
     propertyAddress: String;
     PropertyPrice: DecimalFloat;
     currency: Currency;
+    //ownerId: Association to one User;
 }
 
 entity User: managed {
-    key userId: Integer; 
+    key userId: String; 
     userName: String(50);
     userEmail: String(50);
     userPhone: String(15);
@@ -28,7 +29,7 @@ entity OwnerProperties: managed {
 }
 
 entity PropertyRequets: managed,cuid{
-    requesterId: Association to one User;
+    //requesterId: Association to one User;
     requesterName: String;
     requesterEmail: String(50);
     requeterPhone: String(15);

@@ -1,0 +1,17 @@
+###Register user
+POST http://localhost:4004/register/User
+Content-Type:application/json 
+
+{   
+    "userId": "Anati",
+    "userName": "Anati Paul",
+    "userEmail": "Anati.Paul@sap.com",
+    "userPhone": "9876543232",
+    "sellerFlag": true,
+    "buyerFlag": false
+}
+### get User
+GET http://localhost:4004/admin/User
+### delete User
+
+DELETE http://localhost:4004/admin/User(3)

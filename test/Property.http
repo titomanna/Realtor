@@ -1,0 +1,17 @@
+###Create Property
+POST http://localhost:4004/propertyr/Property
+Content-Type:application/json 
+
+{   
+    "propertyName": "A105 Rohan Vasanta",
+    "propertyType": "Apartment",
+    "propertyBhk": 3,
+    "propertyCountry": "IN",
+    "propertyArea": "1500 sqft",
+    "propertyAddress": "A105 Rohan Vasanta Spice Garden",
+    "PropertyPrice": 80000000,
+    "currency": "INR"
+}
+
+###Get Property
+GET http://localhost:4004/propertyr/Property

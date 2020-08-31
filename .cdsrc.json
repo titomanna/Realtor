@@ -1,1 +1,32 @@
-{}
+{    "auth": {
+        "passport": {
+            "strategy": "mock",
+            "users": {
+                "Tirthendu": {
+                    "password": "123",
+                    "ID": "Tirthendu",
+                    "roles": [
+                        "Admin",
+                        "authenticated-user"
+                    ]
+                    
+                },
+                "Rushabh": {
+                    "password": "123",
+                    "ID": "Rushabh",
+                    "roles": [
+                        "owner-role",
+                        "authenticated-user"
+                    ]
+                    
+                },
+                "Anati": {
+                    "password": "123",
+                    "ID": "Anati",
+                    "roles": [
+                        "authenticated-user"
+                    ]
+                }
+            }
+        }
+    }}
