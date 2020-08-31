@@ -16,10 +16,7 @@
   "cds": {
     "requires": {
       "db": {
-        "kind": "sqlite",
-        "credentials": {
-          "database": "realtor.db"
-        }
+        "kind": "sqlite"
       }
     }
   }
