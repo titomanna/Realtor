@@ -22,6 +22,7 @@ entity User: managed {
     sellerFlag: Boolean;
     buyerFlag: Boolean;
 }
+
 entity OwnerProperties: managed {
     key ownerId: Association to one User;
     key propertyId: UUID;
