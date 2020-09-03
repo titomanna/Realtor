@@ -3,12 +3,12 @@ POST http://localhost:4004/register/User
 Content-Type:application/json 
 
 {   
-    "userId": "Anati",
-    "userName": "Anati Paul",
-    "userEmail": "Anati.Paul@sap.com",
-    "userPhone": "9876543232",
+    "userId": "Tirthendu",
+    "userName": "tirthendu manna",
+    "userEmail": "tirthendu.manna@sap.com",
+    "userPhone": "9876543212",
     "sellerFlag": true,
-    "buyerFlag": false
+    "buyerFlag": true
 }
 ### get User
 GET http://localhost:4004/admin/User

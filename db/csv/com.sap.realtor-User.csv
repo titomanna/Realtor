@@ -1,0 +1,4 @@
+userId,userName,userEmail,userPhone,sellerFlag,buyerFlag
+Tirthendu,Tirthendu Manna,tirthendu.manna@sap.com,9876543212,true,true
+Rushabh,Rushabh Mehta,rushabh.mehta@sap.com,9876543231,true,false
+Anati,Anati Paul,anati.paul@sap.com,9876543211,false,true

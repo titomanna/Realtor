@@ -1,5 +1,5 @@
 ###Create Property
-POST http://localhost:4004/propertyr/Property
+POST http://localhost:4004/owner/Property
 Content-Type:application/json 
 
 {   
@@ -14,4 +14,4 @@ Content-Type:application/json
 }
 
 ###Get Property
-GET http://localhost:4004/propertyr/Property
+GET http://localhost:4004/owner/Property

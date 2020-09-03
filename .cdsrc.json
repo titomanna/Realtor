@@ -6,7 +6,8 @@
                     "password": "123",
                     "ID": "Tirthendu",
                     "roles": [
-                        "Admin",
+                        "owner-role",
+                        "buyer-role",
                         "authenticated-user"
                     ]
                     
@@ -24,6 +25,7 @@
                     "password": "123",
                     "ID": "Anati",
                     "roles": [
+                        "buyer-role",
                         "authenticated-user"
                     ]
                 }

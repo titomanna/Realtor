@@ -1,6 +1,6 @@
 namespace com.sap.realtor;
 using { managed, Country, cuid, Currency } from '@sap/cds/common';
-
+@cds.autoexpose
 entity Property: managed, cuid{
     //key propertyId:Integer;
     propertyName: String;
@@ -13,7 +13,7 @@ entity Property: managed, cuid{
     currency: Currency;
     //ownerId: Association to one User;
 }
-
+@cds.autoexpose
 entity User: managed {
     key userId: String; 
     userName: String(50);
@@ -24,15 +24,15 @@ entity User: managed {
 }
 entity OwnerProperties: managed {
     key ownerId: Association to one User;
-    key propertyId: Association to one Property;
+    key propertyId: UUID;
+    Property:Association to one Property on Property.ID = propertyId;
     status: String;
 }
-
-entity PropertyRequets: managed,cuid{
-    //requesterId: Association to one User;
+@cds.autoexpose
+entity PropertyRequests: managed,cuid{
     requesterName: String;
     requesterEmail: String(50);
     requeterPhone: String(15);
-    propertyId: Association to one Property;
-    requestStatus: Boolean;
+    propertyId: Association to one Property ;
+    requestStatus: String;
 }
